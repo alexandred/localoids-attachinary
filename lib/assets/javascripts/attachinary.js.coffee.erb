@@ -17,7 +17,7 @@
                 <img
                   src="<%= $.cloudinary.url(files[i].public_id, { "version": files[i].version, "format": 'jpg'}) %>"
                   alt=""/>
-                <%= image_tag("selection-reticle.png") %>
+                <img src='www.localoids.com/assets/selection-reticle.png'/>
                 </div>
               <% } %>
               <a href="#" data-remove="<%= files[i].public_id %>">Remove</a>
