@@ -13,9 +13,12 @@
               <% if(files[i].resource_type == "raw") { %>
                 <div class="raw-file"></div>
               <% } else { %>
+                <div class='focus-helper'>
                 <img
-                  src="<%= $.cloudinary.url(files[i].public_id, { "version": files[i].version, "format": 'jpg', "crop": 'fill', "width": 75, "height": 75 }) %>"
-                  alt="" width="75" height="75" />
+                  src="<%= $.cloudinary.url(files[i].public_id, { "version": files[i].version, "format": 'jpg'}) %>"
+                  alt=""/>
+                <img src='/assets/selection-reticle.png'/>
+                </div>
               <% } %>
               <a href="#" data-remove="<%= files[i].public_id %>">Remove</a>
             </li>
