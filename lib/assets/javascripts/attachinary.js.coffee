@@ -20,7 +20,7 @@
                 <div class='selection-reticle'><div class='reticle-point'></div></div>
                 </div>
               <% } %>
-              <a href="#" data-remove="<%= files[i].public_id %>">Remove</a>
+              <a href="#" data-remove="<%= files[i].public_id %>">Remove photos</a>
             </li>
           <% } %>
         </ul>
